@@ -4,18 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Codex Simple Webpage Experiment</title>
-    <link rel="stylesheet" href="assets/style.css" />
+    <script type="module" crossorigin src="./assets/index-DOdbL4GL.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Bwa3bqHk.css">
   </head>
   <body>
     <header class="hero">
       <h1>Welcome to the Codex Web Experiment</h1>
       <p class="tagline">A tiny static page to validate the deployment pipeline.</p>
-      <button id="cta-button" type="button">Show deployment checklist</button>
+      <button id="cta-button" type="button">Review launch steps</button>
     </header>
 
     <main>
       <section class="status" aria-live="polite">
-        <h2>Deployment Checklist</h2>
+        <h2>Launch Steps</h2>
         <ol id="checklist">
           <li data-step="build">Generate static assets</li>
           <li data-step="deploy">Serve the page in a temporary environment</li>
@@ -28,7 +29,7 @@
         <ul>
           <li>The gradient header with centered text.</li>
           <li>The "Codex Web Experiment" headline.</li>
-          <li>The checklist items highlighted after clicking the button.</li>
+          <li>Each step highlights after clicking the button.</li>
         </ul>
       </section>
     </main>
@@ -37,22 +38,5 @@
       Crafted by Codex &mdash; refresh to reset the checklist.
     </footer>
 
-    <script type="module">
-      const button = document.getElementById("cta-button");
-      const checklistItems = Array.from(document.querySelectorAll("#checklist li"));
-
-      button.addEventListener("click", () => {
-        checklistItems.forEach((item, index) => {
-          const delay = index * 200;
-          setTimeout(() => {
-            item.classList.add("completed");
-            item.dataset.status = "done";
-          }, delay);
-        });
-
-        button.disabled = true;
-        button.textContent = "Checklist complete";
-      });
-    </script>
   </body>
 </html>
