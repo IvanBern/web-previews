@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codex Control | Validate ideas. Deploy demos.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">Codex Control</div>
+        <a class="cta" href="#process">See the workflow</a>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Delivery workflow for product teams</p>
+        <h1>Validate ideas. Deploy demos. Repeat.</h1>
+        <p class="lead">
+          Give product owners a runway where experiments spin up in seconds, feedback flows automatically, and release-ready builds are one push away.
+        </p>
+        <div class="hero-actions">
+          <a class="cta primary" href="#process">Explore the three steps</a>
+          <a class="cta secondary" href="#outcomes">See what you get</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="promise" class="section promise">
+        <h2>Straightforward delivery, no heavy lift.</h2>
+        <div class="promise-grid">
+          <p>
+            <strong>One command to launch an idea.</strong> Spin up isolated environments with production-like data and guided checklists for product owners.
+          </p>
+          <p>
+            <strong>Evidence at your fingertips.</strong> Tests, telemetry, and stakeholder notes live beside every experiment so decisions stay clear.
+          </p>
+          <p>
+            <strong>Deploy and share instantly.</strong> Publish links for review-ready demos without manual provisioning or teardown.
+          </p>
+        </div>
+      </section>
+
+      <section id="process" class="section process">
+        <h2>From spark to shared demo in three moves</h2>
+        <ol class="process-steps">
+          <li>
+            <h3>Capture the idea</h3>
+            <p>
+              Product owners describe hypotheses, attach assets, and invite collaborators. The platform mirrors the request into a dedicated branch with automated tracking.
+            </p>
+          </li>
+          <li>
+            <h3>Run the guided experiment</h3>
+            <p>
+              Launch sandbox environments, toggle feature flags, and run the full pipeline of tests with presets tuned for rapid validation.
+            </p>
+          </li>
+          <li>
+            <h3>Deploy &amp; share</h3>
+            <p>
+              Promote the winning version to a live preview or staging release with a single approval, then circulate the link for instant stakeholder feedback.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <section id="outcomes" class="section outcomes">
+        <h2>Built for teams shipping proof faster</h2>
+        <div class="outcome-cards">
+          <article>
+            <h3>Proven pipeline</h3>
+            <p>Automated tests, reviews, and tear-down keep every experiment production-safe without slowing momentum.</p>
+          </article>
+          <article>
+            <h3>Aligned decisions</h3>
+            <p>Every step captures context so PMs, engineers, and stakeholders stay synced on why a change moves forward.</p>
+          </article>
+          <article>
+            <h3>No-surprise deployments</h3>
+            <p>Progressive rollouts and instant rollback give confidence to share prototypes or go live when the time is right.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">Codex Control</div>
+      <div class="footer-links">
+        <a href="#promise">Overview</a>
+        <a href="#process">Workflow</a>
+        <a href="#outcomes">Outcomes</a>
+      </div>
+      <p class="footer-note">© <span id="year"></span> Codex Control. Deliver what's next.</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
