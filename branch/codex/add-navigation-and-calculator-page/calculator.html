@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barbie Calculator &mdash; Codex Experiment</title>
+    <script type="module" crossorigin src="./assets/calculator-DRWX5BwN.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/style-B96b9GXS.js">
+    <link rel="stylesheet" crossorigin href="./assets/style-813MqYt6.css">
+  </head>
+  <body class="calculator-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <nav class="site-nav" aria-label="Primary">
+      <div class="site-nav__inner">
+        <span class="site-nav__brand">Codex Experiments</span>
+        <div class="site-nav__links">
+          <a href="./index.html">Home</a>
+          <a href="./calculator.html" aria-current="page">Barbie Calculator</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main-content" class="calculator-main">
+      <section class="calculator" aria-labelledby="calculator-title">
+        <div class="calculator__header">
+          <h1 id="calculator-title">Barbie Dream Calculator</h1>
+          <p class="calculator__subtitle">
+            A playful twist on the classic iPhone layout with full keyboard support and accessible labels.
+          </p>
+        </div>
+        <div class="calculator__device" role="group" aria-label="Basic calculator">
+          <div class="calculator__screen" role="status" aria-live="polite" aria-atomic="true">
+            <output id="calculator-display">0</output>
+          </div>
+          <div class="calculator__grid" role="group" aria-label="Calculator keypad">
+            <button type="button" class="key key--function" data-action="clear">AC</button>
+            <button type="button" class="key key--function" data-action="sign" aria-label="Toggle sign">±</button>
+            <button type="button" class="key key--function" data-action="percent" aria-label="Percent">%</button>
+            <button type="button" class="key key--operator" data-operator="divide" aria-label="Divide">÷</button>
+
+            <button type="button" class="key" data-digit="7">7</button>
+            <button type="button" class="key" data-digit="8">8</button>
+            <button type="button" class="key" data-digit="9">9</button>
+            <button type="button" class="key key--operator" data-operator="multiply" aria-label="Multiply">×</button>
+
+            <button type="button" class="key" data-digit="4">4</button>
+            <button type="button" class="key" data-digit="5">5</button>
+            <button type="button" class="key" data-digit="6">6</button>
+            <button type="button" class="key key--operator" data-operator="subtract" aria-label="Subtract">−</button>
+
+            <button type="button" class="key" data-digit="1">1</button>
+            <button type="button" class="key" data-digit="2">2</button>
+            <button type="button" class="key" data-digit="3">3</button>
+            <button type="button" class="key key--operator" data-operator="add" aria-label="Add">+</button>
+
+            <button type="button" class="key key--zero" data-digit="0">0</button>
+            <button type="button" class="key" data-action="decimal" aria-label="Decimal point">.</button>
+            <button type="button" class="key key--operator key--equals" data-action="equals" aria-label="Equals">=</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator-notes">
+        <h2>How to use the dream calculator</h2>
+        <ul>
+          <li>Tap or press the number keys on your keyboard to enter values.</li>
+          <li>Use the standard operators (<kbd>+</kbd>, <kbd>-</kbd>, <kbd>*</kbd>, <kbd>/</kbd>) or click the pink controls.</li>
+          <li>The display announces changes for screen reader users and supports contrast-friendly focus states.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      Crafted by Codex &mdash; math, but make it glam.
+    </footer>
+
+  </body>
+</html>
